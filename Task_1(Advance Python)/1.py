@@ -24,3 +24,5 @@ input = [1,2,3,4,5]
 s = Solution()
 output = s.runningsum(input) # out value is stored in output
 print(output)
+# OR
+# print(s.runningsum(input))

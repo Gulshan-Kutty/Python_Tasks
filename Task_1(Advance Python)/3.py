@@ -32,6 +32,9 @@ ex_can = 4
 s = Solution()
 output = s.kidsWithCandies(candies,ex_can)
 print(output)
+# OR
+# print(s.kidsWithCandies(candies,ex_can))
+
 
 # OR
 

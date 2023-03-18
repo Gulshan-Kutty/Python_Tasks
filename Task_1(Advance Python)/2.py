@@ -26,3 +26,5 @@ n = 3
 s = Solution()
 output = s.shuffle(nums,n)
 print(output)
+# OR
+# print(s.shuffle(nums,n))

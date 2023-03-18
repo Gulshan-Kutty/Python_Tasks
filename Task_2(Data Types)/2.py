@@ -13,7 +13,9 @@ Sample Output
 '''
 n = int(input('Enter the number of participants:'))
 arr = map(int, input('Enter the scores:').split())
-sort_arr = sorted(arr, reverse=True) # you can also use list_obj.sort() but it changes the original list and retuns None if saved in a variable.
+sort_arr = sorted(arr, reverse=True)  
+''' you can also use list_obj.sort() but it changes the original list and retuns None if saved in a variable.
+And using list_obj.sort() is not a good practice because if we need to use original list further then it will be a problem.'''
 for i in range(len(sort_arr)):
     if sort_arr[i] == sort_arr[0]:
         continue
@@ -21,9 +23,10 @@ for i in range(len(sort_arr)):
         print(sort_arr[i])
         break
 
-
+# OR
 
 # n = int(input('Enter the number of participants:'))
-# arr = map(int, input('Enter the scores:').split())
+# arr = list(map(int, input('Enter the scores:').split()))
+# arr = list(set(arr))
 # sort_arr = sorted(arr) # you can also use list_obj.sort() but it changes the original list and retuns None if saved in a variable.
-# print(sort_arr[-2]) # it won't work if maximum score is repated more than once
+# print(arr[-2])
